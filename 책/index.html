@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SDK</title>
+<!--favicon(파비콘)-->
+<link href="img/main/favicon.png" type="image/icon" rel="shortcut icon">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+
+<script src="js/html5shiv.js">
+</script>
+<script src="js/jquery-3.3.1.js">
+</script>
+<script>
+$(document).ready(function(e) {
+var box=$('.content ul');
+	//.content ul li의 마지막 객체를 .content ul영역의 맨 앞으로 추가하기
+	$('.content ul li:last').prependTo('.content ul');
+	//다음 버튼을 클릭하면 이미지가 1개식 나옴
+	$('.arrow_next').click(function(){
+		box.stop().animate({'margin-left':'-=222'},500,function(){
+			//맨 처음 li를 .content ul의 마지막에 추가하기
+		$('.content ul li:first').appendTo('.content ul');
+		//.content ul의 위치값 고정
+			box.css('margin-left',-222);
+		});
+	});
+	//이전 버튼을 클릭하면 이미지가 1개씩 나옴
+	$('.arrow_prev').click(function(){
+		box.stop().animate({'margin-left':'+=222'},500,function(){
+		//.content ul의 마지막 li객체가 .content ul영역의 맨앞에 추가됨
+		$('.content ul li:last').prependTo('.content ul');
+		//.content ul의 위치값 고정
+			box.css('margin-left',-222);
+		});
+	});
+});
+</script>
+
+</head>
+<body>
+    <div id="wrap">
+    	<header>
+        	<div id="top">
+            	<div id="left_ment">
+                    <img src="img/main/text1.png" alt="한 권의 좋은 책">
+                </div><!--left_ment end-->
+                <div id="logo">
+                    <a href="index.html">
+                    <img src="img/main/logo.png" alt="logo">
+                    </a>
+                </div><!--logo end-->
+                <div id="right_sns">
+                    <ul>
+                        <li><a href="#"><img src="img/main/facebook.png" alt="facebook"></a>
+                        </li>
+                        <li><a href="#"><img src="img/main/instargram.png" alt="instagram"></a>
+                        </li>
+                        <li><a href="#"><img src="img/main/kakao.png" alt="kakao"></a>
+                        </li>
+                    </ul>
+               </div><!--right_sns end-->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="product.html">Best Seller</a>
+                    </li>
+                    <li><a href="#">Steady Seller</a>
+                    </li>
+                    <li><a href="#">New</a>
+                    </li>
+                    <li><a href="#">Event</a>
+                    </li>
+                    <li><a href="#">Sale</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="icon_menu">
+                <ul>
+                    <li>
+                        <div class="txt"><a href="#">행&nbsp;&nbsp;복</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="txt"><a href="#">성&nbsp;&nbsp;공</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="txt"><a href="#">사&nbsp;&nbsp;고</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="txt"><a href="#">힐&nbsp;&nbsp;링</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="txt"><a href="#">발&nbsp;&nbsp;표</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="txt"><a href="#">리&nbsp;더&nbsp;쉽</a>
+                        </div>
+                    </li>
+					<li>
+                        <div class="txt"><a href="#">인&nbsp;간&nbsp;관&nbsp;계</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="txt"><a href="#">남&nbsp;과&nbsp;여</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <article id="slide">
+                <ul>
+                    <input type="radio" name="slide" class="trigger" id="one" checked="checked">
+                    <li>
+                        <a href="#"><img src="img/main/main-img-a.png" alt="main slide1"></a>
+                        <!--왼쪽 단추,오른쪽 단추-->
+                        <label for="three" class="menu prev"><img src="img/main/arrow-left.png" alt="왼쪽 화살"></label>
+                        <label for="two" class="menu next"><img src="img/main/arrow-right.png" alt="오른쪽 화살"></label>
+                    </li>
+                    <input type="radio" name="slide" class="trigger" id="two">
+                    <li><a href="#">
+                        <img src="img/main/main-img-b.png" alt="main slide2"></a>
+                        <!--왼쪽 단추,오른쪽 단추-->
+                        <label for="one" class="menu prev"><img src="img/main/arrow-left.png" alt="왼쪽 화살"></label>
+                        <label for="three" class="menu next"><img src="img/main/arrow-right.png" alt="오른쪽 화살"></label>
+                    </li>
+                    <input type="radio" name="slide" class="trigger" id="three">
+                    <li><a href="#">
+                        <img src="img/main/main-img-c.png" alt="main slide3"></a>
+                         <!--왼쪽 단추,오른쪽 단추-->
+                        <label for="two" class="menu prev"><img src="img/main/arrow-left.png" alt="왼쪽 화살"></label>
+                        <label for="one" class="menu next"><img src="img/main/arrow-right.png" alt="오른쪽 화살"></label>
+                    </li>
+                    <div class="btn">
+                        <ul>
+                            <li><label for="one" id="aa">1</label></li>
+                            <li><label for="two" id="bb">2</label></li>
+                            <li><label for="three" id="cc">3</label></li>
+                        </ul>
+                    </div>
+                </ul>
+            </article>
+            <div class="box">
+                <article id="brand">
+                    <h1>BRAND</h1>
+                    <div id="lol">
+                   		<P>내일의 나를 위한 선택</P><h3>SDK</h3>
+                    </div>
+                    <div class="brand" id="b1">
+                        <div class="left_box">REVIEW</div>
+                        <div class="right_box"><a href="#">추천순<img src="img/main/arrow3.png" alt="화살표"></a></div>
+                        <div class="right_box"><a href="#">조회순<img src="img/main/arrow3.png" alt="화살표"></a></div>
+                    </div>
+                    <div class="brand" id="b2">
+                        <div class="left_box">추천마법사</div>
+                        <div class="right_box" id="arrow"><a href="#">나에게 맞는 도서<img src="img/main/arrow3.png" alt="네게 맞는 책"></a></div>
+                    	<div class="right_box"><a href="#">선호도 검사<img src="img/main/arrow3.png" alt="선호도 검사"></a></div>
+                    </div>
+                </article>
+            </div>
+            <article id="communication">
+                <h1>인스타그램</h1>
+                <div class="gallery">
+                    <div class="content">
+                        <ul>
+                            <li><a href="#"><img src="img/main/myung01.jpg" alt="myung_un"></a>
+                                <h4>#독서나 해볼까<br>#커피한잔</h4>   
+                            </li>
+                            <li><a href="#"><img src="img/main/myung02.jpg" alt="myung_un"></a>
+                                <h4>#뭘 읽지?#나른한 오후♡ </h4> 
+                            </li>
+                            <li><a href="#"><img src="img/main/myung03.jpg" alt="myung_un"></a>
+                                <h4>#폭풍등산#1시간<br>#뿌듯</h4>
+                            </li>    
+                            <li><a href="#"><img src="img/main/myung04.jpg" alt="myung_un"></a>
+                                <h4>#일본 추억 #다시 떠오른다 캬</h4>
+                            </li>
+                            <li><a href="#"><img src="img/main/myung05.jpg" alt="myung_un"></a>
+                                <h4>#넘나 행복한날♧<br>#월급 날</h4>
+                            </li>
+                            <li><a href="#"><img src="img/main/myung06.jpg" alt="myung_un"></a>
+                                <h4>#오랜만에 #남편과 독서</h4>
+                            </li>
+                            <li><a href="#"><img src="img/main/myung07.jpg" alt="myung_un"></a>
+                                <h4>#소통해요 #책과 함께^^</h4>
+                            </li>
+                            <li><a href="#"><img src="img/main/myung08.jpg" alt="myung_un"></a>
+                                <h4>#경치가 #끝내준다<br>#비온뒤 날씨 갬</h4>
+                            </li>
+                            <li><a href="#"><img src="img/main/myung09.jpg" alt="myung_un"></a>
+                                <h4>#야경#나이샤~#오늘 하루도~</h4>
+                            </li>
+                            <li><a href="#"><img src="img/main/myung10.jpg" alt="myung_un"></a>
+                                <h4>#일러스트페어 #뿌듯^^..</h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn">
+                        <div class="arrow_prev">
+                            <img src="img/main/arrow-left2.png" alt="left_button">
+                        </div>
+                        <div class="arrow_next">
+                            <img src="img/main/arrow-right2.png" alt="left_button">
+                        </div>
+        			</div>
+    			</div>       
+        		<p><a href="#">더보기<img src="img/main/arrow3.png" alt="더보기"></a></p>
+        	</article>
+            <article id="book">
+                <div id="self">
+                    <div id="book01">
+                    <a href="#"><img src="img/main/body3-img3.png" alt="책1"></a>
+                    </div>
+                    <div id="book02">
+                    <a href="#"><img src="img/main/body3-img4.png" alt="책2"></a>
+                    </div>
+                    <div id="book03">
+                    <a href="#"><img src="img/main/body3-img5.png" alt="책3"></a>
+                    </div>
+                    <div id="book04">
+                    <a href="#"><img src="img/main/body3-img2.png" alt="책4"></a>
+                    </div>
+                    <div id="book05">
+                    <a href="#"><img src="img/main/body3-img1.png" alt="책5"></a>
+                    </div>
+               </div>
+            </article>
+        </section>
+        <footer>
+            <div id="grey_logo">
+            	<img src="img/main/Untitled-1.png" alt="grey_logo">
+            </div>
+            <div id="addr">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                </ul>
+                <address>
+                SDK ㅣ 대표 : 김성훈  ㅣ 사업자등록번호 : 123-45-678ㅣ 경기도 시흥시 은행동 240-5<br> 
+                상담 및 문의 : 2580-7777 ㅣ 이메일문의 : seongs70@naver.com ㅣ 카톡ID : seongs70<br> 
+                SDK(Self Development Korea)는 자기개발 전문 사이트로써 여러분에게 최적화된 책을 권장해 드립니다.<br><br>
+                </address> 
+            </div>
+            <div id="footer_top">
+                <a href="#"><img src="img/main/top.png" alt="top"></a>
+                <a name="#topMove"></a>
+            </div>
+            <p> Copyright (c) SDK All rights reserved.</p>
+        </footer>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>베지랜드</title>
+<link href="img/favicon.png" type="image/icon" rel="shortcut icon">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link href="css/sub1.css" type="text/css" rel="stylesheet">
+<script src="js/jquery-3.3.1.js">
+</script>
+<script src="css/sub1.css">
+</script>
+<script>
+$(document).ready(function(e) {
+	var wh = $(window).height();
+	$('.bg1').css('height',wh);
+$('.nav > ul > li').hover(function(){
+		$('.sub').stop().slideDown();
+		$('.sub_bg').stop().slideDown();
+	},
+	//마우스 치웠을때
+	function(){
+		$('.sub').stop().slideUp();
+		$('.sub_bg').stop().slideUp();
+	});
+$(window).scroll(function(e){
+	var D_top = $(document).scrollTop();
+	var W_height = $(window).height();
+	var D_top_bot = D_top + W_height-200;
+	console.log(D_top);
+	var B1 = $('.box_bg').offset().top;
+	var B2 = $('.box_bg2').offset().top;
+	var B3 = $('.box_bg3').offset().top;
+	var B4 = $('.box4').offset().top;
+	console.log(B1);
+	if(D_top_bot >= B1){
+		$('.box_bg').addClass('active');	
+	}
+	if(D_top_bot >= B2){
+		$('.box_bg2').addClass('active');	
+	}
+	if(D_top_bot >= B3){
+		$('.box_bg3').addClass('active');	
+	}
+	if(D_top_bot >= B3){
+		$('.box4').addClass('active');	
+	}
+
+});
+$(function() {
+    function swing() {
+        $('.bg1 img:last-child').animate({'top':'69.4%'},600).animate({'top':'70.5%'},600, swing);
+    }
+    swing();
+	});
+});
+</script>
+</head>
+<body> 
+    <header>
+    	<? include "header.html"; ?>
+    </header>
+    <section>
+    	<div class="wrap_bg1">
+			<div class="bg1">
+				<h1>WE ARE VEGITARIAN</h1>
+                <img src="img/mouse1.svg">
+                <img src="img/down1.svg">
+			</div>
+		</div>
+		<div class="box1">
+            <div class="box_bg">
+            <h1>Vegetable Shop</h1>
+            <h2>[ Special quality control ]</h2>
+                <div class="sub_box_1_1">
+                	<img src="img/sub_box_1_1.png">
+    			</div>
+   			<img src="img/sub_box_1_2.png">
+    		</div>
+		</div>
+        <div class="bg2">
+        </div>
+		<div class="box2">
+        	<div class="box_bg2">
+        		<div class="bg2_font1">
+                    <h1>Diet(다이어트),<br>Healthy(건강),<br>ethics(윤리)</h1>
+                    <h2>채식은 육류를 피하고 식물성 식품을 중심으로 하는 식사를 말하는 것으로 채식주의자는 채식이 우리에게 온전하고 건전한 육체와 정신을 증진시키고 지구에게는 온전한 환경을 만들어 낸다.</h2>
+				</div>
+                <div class="bg2_font2">
+                	<h2><h3>세미 베지테리언</h3>은 붉은 고기류는 금하나 닭은 섭취하는 것을 말하고, <h3>페스코</h3>는 육식은 금하고 생선까지만 먹는 채식주의자를 말하며, <h3>락토 오보 베지테리언</h3>은 육식은 하지 않되 우유와 계란을 먹는 채식주의자를 말한다. 또한 <h3>락토</h3>는 육식은 하지 않되 우유까지만 먹는 채식주의자를 말하며, <h3>비건</h3>은 다른 동물성 단백질을 섭취하지 않는 완전한 채식주의자를 말한다.</h2>
+                </div>
+                <div class="sub_box_2">
+                </div>
+			</div>
+		</div>
+		<div class="bg3">
+		</div><!--bg3-->
+        <div class="box3">
+            <div class="box_bg3">
+                <div class="bg3_font1">
+                	<h1>육식은<br>질병을 가져오고<br>채식은<br>건강을 지켜준다</h1>
+                </div><!--bg3_font1-->
+            	<div class="bg3_font2">
+                    <h2>연간 전체 질병사망자의 71.5%인 2,557만명이 육식과 관련있는 질병으로 사망한다.(심장혈관질환 사망자의 85%, 전염병 사망자의 61%, 암 사망자의 60%, 당뇨병 사망자의 50%가 육식과 관련한 사망자)
+                
+                	</h2> <h3>- WHO(세계보건기구), 2004년</h3><h2> <br>
+                원시 인류는 곤충이나 동물의 알, 느린 파충류 등을 먹으면서 육식을 하기 시작하다가 약 1만년 전부터 '걸어다니는 고기'인 가축을 기르기 시작하였다. 인류가 해 온 육식은 육식이라고 하기도 힘들 만큼 거의 채식으로 채워진 것이었다. 인간의 장기는 침팬지의 장기와 비슷하고, 침팬지는 먹이의 90% 이상이 식물성이다.
+                	<h3>- 조홍섭, <생명과 환경의 수수께끼>의 저자</h3>
+                	</h2>
+            	</div>
+                <div class="sub_box_3">
+                </div><!--sub_box_3-->
+            </div><!--box_bg3-->
+        </div><!--box3-->
+        <div class="box4_wrap">
+            <div class="box4">
+            	<h4>ENJOY THE SPECIALTY</h4>
+                <div class="box4_sub1_wrap">
+                    <div class="box4_sub1">2300</div>
+                    <div class="box4_sub1">50</div>
+                    <div class="box4_sub1">∞</div>
+            	</div><!--box4_sub1_wrap-->
+                <div class="box4_sub2_wrap">
+                    <div class="box4_sub2">COLLECTORS</div>
+                    <div class="box4_sub2">COUNTRIES</div>
+                    <div class="box4_sub2">PASSION</div>
+                </div><!--box4_sub2_wrap-->
+                <div class="box_sub3_wrap">
+                    <div class="box4_button_1">SEE WHAT'S NEW</div>
+                    <div class="box4_button_2">CONTACT US</div>
+                    <div class="sub3_image"></div>
+                </div>     
+            </div><!--box4-->
+        </div><!--box4_wrap-->
+	</section>
+    <footer>
+    <? include "footer.html"; ?>
+    </footer>
+</body>
+</html>

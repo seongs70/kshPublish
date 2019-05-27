@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin:0; padding:0; }
+li { list-style:none; }
+a { text-decoration:none; color:#333; }
+nav { width:700px; margin:50px auto; }
+nav > ul > li {
+	float:left;	
+}
+nav > ul > li > a {
+	display:block;
+	padding:5px 30px;
+	font-weight:bold;	
+}
+
+nav .sub {
+	background-image:url(file:///D|/%EA%B9%80%EC%84%B1%ED%9B%88/Web/img/cgv-background.jpg);
+	padding:5px;
+}
+nav .sub li a {
+	font-size:15px;
+	display:block;
+	padding:5px;
+	color:#fff;
+	padding-right:30px;	
+}
+
+nav .sub li a:hover {
+	color:#f00;
+	background-image:url(file:///D|/%EA%B9%80%EC%84%B1%ED%9B%88/Web/img/hand.png)
+	background-repeat:no-repeat;
+	background-position:center right;
+	}
+nav .line {
+	border:2px solid #666;
+	padding:10px;
+		
+}

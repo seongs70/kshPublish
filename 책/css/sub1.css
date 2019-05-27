@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+section {
+	background-color:#d6cab5; height:1835px;	
+}
+.deco {margin-bottom:130px;}
+#product {
+	width:1200px; height:1451px;
+	margin:0 auto; margin-left:130px;	
+}
+#product ul li {
+	width:270px; height:397px;
+	float:left; margin-right:65px;
+	margin-bottom:65px; position:relative;
+}
+#product ul li a img {
+	width:270px; height:397px;	
+}
+/*3의 배수*/
+#product ul li:nth-child(3n) {
+	margin-right:0;	
+}
+/*img와 p태그 겹침*/
+#product ul li .description {
+	transition:all 2s; position:absolute;
+	top:0; left:0;
+	background-color:rgba(0,0,0,0.7); color:#fff;
+	text-shadow:1px 1px 1px #000; font-size:16px;
+	display:none;
+}
+#product ul li:hover .description {
+	display:block;	transition:all 2s;
+}
+#product ul li .description h3 {
+	color:#FFF; font-family:Pristina;
+	font-size:30px; letter-spacing:2px;
+}
+#product ul li .description h4 {
+	color:#c4a579; font-size:22px;
+	letter-spacing:2px;
+}
+#product ul li .description h5 {
+	color:#fff; font-size:15px;
+	letter-spacing:2px;
+}
+#product ul li:nth-child(3n+1) .description{
+	padding:100px 0 0 35px;
+	width:235px; height:297px;
+}
+#product ul li:nth-child(3n+1) .description h5{line-height:280px;}
+#product ul li:nth-child(3n-1) .description{
+	text-align:center; padding:100px 0 0 0;
+	width:270px; height:297px;
+}
+#product ul li:nth-child(3n-1) .description h5{
+	line-height:280px; text-align:center;
+}
+#product ul li:nth-child(3n) .description{
+	padding:100px 35px 0 0; 
+	text-align:right; width:235px; 
+	height:297px;
+}
+#product ul li:nth-child(3n) .description h5{line-height:280px;}

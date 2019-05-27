@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>베지랜드</title>
+
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link href="css/board.css" type="text/css" rel="stylesheet">
+<link href="css/jquery.mThumbnailScroller.css" type="text/css" rel="stylesheet">
+<script src="js/jquery-3.3.1.js">
+</script>
+<script src="js/main.js">
+</script>
+
+</head>
+<!--onload="initialize()"-->
+<body> 
+<div class="wrap">
+	<header>
+    	<? include "header.html"; ?>
+    </header>
+    <section>
+    	<div class="sub_image">
+       
+        	<img src="img/a3.png">
+        </div>
+ 		<div class="board">
+        	<div class="event_board">
+            <iframe src="http://user156.dothome.co.kr/gb/bbs/board.php?bo_table=event_brd&page=" frameborder="0">
+            </div>
+        </div>
+    </section>
+    <? include "footer.html"; ?>
+
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../js/minified/jquery-1.11.0.min.js"><\/script>')</script>
+	
+	<!-- plugin script -->
+	<script src="js/jquery.mThumbnailScroller.js"></script>
+	
+	<script>
+		(function($){
+			$(window).load(function(){
+				
+				//var loopDuration=3000;
+				
+				$("#content-1").mThumbnailScroller({
+					callbacks:{
+						onInit:function(){
+							$("#content-1").mThumbnailScroller("scrollTo","right",{duration:loopDuration/2,easing:"easeInOutSmooth"});
+						},
+						onTotalScroll:function(){
+							if($(this).data("mTS").trigger==="external"){
+								$("#content-1").mThumbnailScroller("scrollTo","left",{duration:loopDuration/2,easing:"easeInOutSmooth"});
+							}
+						}
+					}
+				});
+				
+			});
+		})(jQuery);
+	</script>
+
+
+
+
+</body>
+</html>

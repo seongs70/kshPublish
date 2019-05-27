@@ -1,0 +1,522 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>참치한잔</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+<meta name="description" content="A slideshow that shows an animated SVG frame on the transitions between slides">
+<meta name="keywords" content="slideshow, javascript, frame, animation, svg, shape, path, web design">
+<meta name="author" content="Codrops">
+<link href="css/main.css" type="text/css" rel="stylesheet">
+<link href="img/pc/favicon.png" type="image" rel="shortcut icon">
+<script src="js/jquery-3.3.1.js">
+</script>
+<script src="js/main.js">
+</script>
+</head>
+<body>
+	<div class="wrap">
+        <div class="header">
+            <header>
+            <div class="menu_btn btn1">
+            	<a href="#"><img src="img/mobile/asub_menu.png" alt="menu button"></a>
+            </div>
+            <div class="menu_btn btn2">
+            	<a href="#"><img src="img/mobile/asub_menu2.png" alt="menu button"></a>
+            </div>
+            <div class="logo_wrap">
+                <div class="logo">
+                	<a href="index.html"><img src="img/pc/logo.png" alt="logo"></a>
+                </div>
+                <div class="m_logo l2">
+                    <a href="index.html"><img src="img/mobile/logo.png" alt="logo"></a>
+                </div>
+                <div class="m_logo l1">
+                    <a href="index.html"><img src="img/mobile/logo2.png" alt="logo"></a>
+                </div>
+            </div>       
+            <!--pc버전 네비게이션-->
+            <div class="nav">
+            	<nav>
+                	<ul>
+                    	<li><a href="#">참치한잔 소개</a>
+                        	<ul class="sub">
+                            	<li><a href="#">인사말</a></li>
+                                <li><a href="#">위치소개</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                       	</li>
+                        <li><a href="#">메뉴안내</a>
+                            <ul class="sub">
+                            	<li><a href="#">주메뉴</a></li>
+                                <li><a href="#">서브메뉴</a></li>  
+                            </ul>
+                        </li>    
+                        <li><a href="#">갤러리</a>
+                           	<ul class="sub">
+                            	<li><a href="sub.html"><span>인스타그램</span></a></li>
+                            	<li><a href="#">둘러보기</a></li>
+                            </ul>
+                        </li>    
+                        <li><a href="#">소식</a>
+                            <ul class="sub">
+                            	<li><a href="#">공지사항</a></li>
+                                <li><a href="#">참치 이야기</a></li>
+                        	</ul>
+                        </li>
+                   </ul>
+             	</nav>
+            </div><!--nav-->
+            
+            <!--모바일 nav-->
+            <div class="mobile_nav">
+            	<nav>
+                	<ul>
+                    	<li><a href="#">참치한잔 소개</a>
+                        	<ul class="sub">
+                            	<li><a href="#">인사말</a></li>
+                               	<li><a href="#">위치소개</a></li>
+                                <li><a href="#">신상품</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">메뉴안내</a>
+                           	<ul class="sub">
+                            	<li><a href="#">주메뉴</a></li>
+                            	<li><a href="#">서브메뉴</a></li>
+                            </ul>
+                        </li>    
+                        <li><a href="#">갤러리</a>
+                            <ul class="sub">
+                            	<li><a href="sub.html"><span>인스타그램</span></a></li>
+                                <li><a href="#">둘러보기</a></li>
+                            </ul>
+                        </li>    
+                        <li><a href="#">소식</a>
+                        	<ul class="sub">
+                            	<li><a href="#">공지사항</a></li>
+                            	<li><a href="#">참치 이야기</a></li>
+                           	</ul>
+                        </li>
+                        </ul>
+                </nav>
+                <div class="nav_close">
+               		<a href="#">
+                    	<img src="img/mobile/x_button.png" alt="close">
+                    </a>
+                </div>
+                <div class="nav_logo">
+               		<a href="#">
+                    	<img src="img/mobile/logo.png" alt="close">
+                    </a>
+                </div>
+            </div>   
+            </header>
+        </div><!--header-->
+	</div><!--wrap-->
+    <section>
+   		<a class="top" href="#"></a>
+		<div class="m_slideshow">
+			<ul>
+            	<li><img src="img/mobile/m_slide2.jpg">	
+                </li>
+                <li><img src="img/mobile/m_slide3.jpg">	
+                </li>
+                <li><img src="img/mobile/m_slide1.jpg">	
+                </li>
+            </ul>
+            <nav class="m_slidenav">
+				<button class="m_slidenav__item m_slidenav__item--prev"></button>
+				<button class="m_slidenav__item m_slidenav__item--next"></button>
+			</nav>
+		</div>
+		<div class="slideshow">
+			<ul>
+            	<li><img src="img/pc/18.jpg">	
+                </li>
+                <li><img src="img/pc/19.jpg">	
+                </li>
+                <li><img src="img/pc/17.jpg">	
+                </li>
+            </ul>
+            <nav class="slidenav">
+				<button class="slidenav__item slidenav__item--prev"></button>
+				<button class="slidenav__item slidenav__item--next"></button>
+			</nav>
+		</div>
+		<div class="banner1">
+        	<h1>참치한잔</h1>
+        	<h3>좋은 참치와 사케한잔이 기억될 것입니다.<br> 
+                기억의 한조각이 되어 드리겠습니다.<br>
+                여러분에게 추억을 선사해 드립니다.</h3> 
+		</div><!--banner1-->
+		<div class="banner1_img_wrap">           
+            <ul class="banner1_img_ul">
+                <a href="#"><li class="banner1_img pictogram1"></li></a>
+                <a href="#"><li class="banner1_img pictogram2"></li></a>
+                <a href="#"><li class="banner1_img pictogram3"></li></a>
+                <a href="#"><li class="banner1_img pictogram4"></li></a>
+            </ul>		       
+		</div>
+        <div class="banner1_img_wrap">           
+            <ul class="banner1_text_ul">
+                <li class="banner1_text"><a href="#">인사말</a></li>
+                <li class="banner1_text"><a href="#">방명록</a></li>
+                <li class="banner1_text"><a href="#">주변관광</a></li>
+                <li class="banner1_text"><a href="#">찾아 오시는길</a></li>
+            </ul>
+       </div>
+        <div class="m_banner1_img_wrap">           
+            <ul class="m_banner1_img_ul">
+                <li class="m_banner1_img pictogram1"><a href="#"></a></li>
+                <li class="m_banner1_img pictogram2"><a href="#"></a></li>
+            </ul>		       
+		</div>
+        <div class="m_banner1_img_wrap">           
+            <ul class="m_banner1_text_ul">
+                <li class="m_banner1_text"><a href="#">인사말</a></li>
+                <li class="m_banner1_text"><a href="#">방명록</a></li>
+            </ul>
+        </div>
+        <div class="m_banner1_img_wrap">           
+            <ul class="m_banner1_img_ul">
+                <li class="m_banner1_img pictogram3"><a href="#"></a></li>
+                <li class="m_banner1_img pictogram4"><a href="#"></a></li>
+            </ul>		       
+		</div>
+        <div class="m_banner1_img_wrap">           
+            <ul class="m_banner1_text_ul"> 
+                <li class="m_banner1_text"><a href="#">주변관광</a></li>
+                <li class="m_banner1_text"><a href="#">오는 길</a></li>
+            </ul>      
+        </div>     
+        <div class="line3">
+        </div>
+        <div class="banner1">
+                <h1>기분좋은 한잔</h1>
+                <h3>그날에 적합한 술을 추천해드립니다</h3> 
+        </div><!--banner1-->
+        <div class="banner2">
+        	<div class="banner2_left">
+            </div>
+            <div class="banner2_right">
+            	<ul class="banner2_right_ul">
+                	<li class="banner2_right_li1">
+                    	매화사케
+                    </li>
+                    <li class="banner2_right_li2">
+                    나&nbsp;&nbsp;라&nbsp;&nbsp;|&nbsp;&nbsp;일본<br>
+                    지&nbsp;&nbsp;역&nbsp;&nbsp;|&nbsp;&nbsp;후쿠오카<br>
+                    가&nbsp;&nbsp;격&nbsp;&nbsp;|&nbsp;&nbsp;20,000원<br>
+                    용&nbsp;&nbsp;량&nbsp;&nbsp;|&nbsp;&nbsp;700ml<br>
+                    제&nbsp;&nbsp;조&nbsp;&nbsp;|&nbsp;&nbsp;2018.09.03<br>
+                    향&nbsp;&nbsp;미&nbsp;&nbsp;|&nbsp;&nbsp;깔끔한 맛이 일품입니다.
+                    </li>
+                    <li class="banner2_right_li3">
+                    <a href="#">둘러보기</a>
+                    </li>
+                </ul>
+            </div>
+        </div>     
+        <div class="bg_01">
+             <div class="hover panel">
+                    <div class="front">
+                        <div class="pad">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="pad">
+                        </div>
+                    </div>
+                </div>
+        </div>
+		<div class="banner1">
+                <h1>인스타그램</h1>
+                <h3>즐거운 기억들을 간직하고 함께 나눠보세요</h3> 
+        </div><!--banner1-->
+        <div class="gallery">
+            <div class="content">
+                <ul>
+                    <li><a href="#"><img src="img/pc/myung01.jpg" alt="myung_un"></a>
+                        <h4>#점심엔 운동 저녁엔 참치<br>#먹스타그램 #소통해요 </h4>   
+                    </li>
+                    <li><a href="#"><img src="img/pc/myung02.jpg" alt="myung_un"></a>
+                        <h4>#참치한잔   #내일이란 없다 #넘나 행복♡♡ </h4> 
+                    </li>
+                    <li><a href="#"><img src="img/pc/myung03.jpg" alt="myung_un"></a>
+                        <h4>#폭풍등산 #1시간 컷<br>#미세먼지와 함께<br> #끝나고 참치나 흡입한다</h4>
+                    </li>    
+                    <li><a href="#"><img src="img/pc/myung04.jpg" alt="myung_un"></a>
+                        <h4>#일본 추억 #다시 떠오른다 캬~ #소통스타그램</h4>
+                    </li>
+                    <li><a href="#"><img src="img/pc/myung05.jpg" alt="myung_un"></a>
+                        <h4>#넘나 행복한날♧<br>#월급 날 #나를 위한 선물</h4>
+                    </li>
+                    <li><a href="#"><img src="img/pc/myung06.jpg" alt="myung_un"></a>
+                        <h4>#오랜만에 #남편과 참치</h4>
+                    </li>
+                    <li><a href="#"><img src="img/pc/myung07.jpg" alt="myung_un"></a>
+                        <h4>#소통해요 #참치와 함께^^</h4>
+                    </li>
+                    <li><a href="#"><img src="img/pc/myung08.jpg" alt="myung_un"></a>
+                        <h4>#경치가 #끝내준다<br>#비온뒤 날씨 갬</h4>
+                    </li>
+                    <li><a href="#"><img src="img/pc/myung09.jpg" alt="myung_un"></a>
+                        <h4>#야경#나이샤~#오늘 하루도 #나이 샤~</h4>
+                    </li>
+                    <li><a href="#"><img src="img/pc/myung10.jpg" alt="myung_un"></a>
+                        <h4>#일러스트페어#끝나고 사케와 차암치~#뿌듯^^..</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn">
+                <div class="arrow_prev">
+                    <img src="img/pc/arrow-left2.png" alt="left_button">
+                </div>
+                <div class="arrow_next">
+                    <img src="img/pc/arrow-right2.png" alt="left_button">
+                </div>
+            </div>
+        </div>            
+        <div class="more">
+            <a href="#">더보기</a>
+        </div>      
+        <div class="line4">
+        </div>       
+        <div class="line4_text">
+            <h1>#소통해요</h1>
+            <h3>알고 드시면 더욱 더 맛있는 참치에 대한 상식</h3>
+                <ul class="tap">
+                    <li><h5 class="tap_menu1">참치이야기</h5>
+                    </li>
+                    <li><h5 class="tap_menu2">&nbsp;주저리주저리</h5>
+                    </li>
+                </ul>
+        </div>
+        <div class="tuna_story_allwrap">
+            <div class="tuna_story_wrap tsw1">
+                <div class="tuna_story">
+                    <div class="tuna_story01">
+                        <h1>"맛있는 특별 음식은 우리들을 관대하게 하고 미식가는 사람을 책망하지 않는다."<br><span>-라따피</span></h1>
+                    </div>
+                    <div class="tuna_story02">
+                        <a href="#"><div class="tuna_story_img story0">
+                        <img src="img/pc/tuna1.jpg">
+                        </div></a>
+                        <div class="tuna_story_font">
+                        <img src="img/pc/Untitled-2.png"><h2>#01.</h2>
+                        </div>
+                        <div class="tuna_story_text">
+                        <a href="#"><h3>의미를 알고 계시나요?</h3></a>
+                        <h4>참치는 고등어과에 속하는 등푸른 생선의 대표적인 어종이다. 지구상에서 오염이 가장 적은 남대평양과 대서양 등에서만 서식하는 것이 특징으로 비타민, 미네랄 성분도 포함하고 있어 성인이나 어린이 할 것 없이 즐겨 찾는 식품이다.</h4>
+                        </div>	
+                    </div>
+                </div>
+                <div class="tuna_story">
+                    <div class="tuna_story02">
+                        <a href="#"><div class="tuna_story_img story1">
+                        <img src="img/pc/tuna2.jpg">
+                        </div></a>
+                        <div class="tuna_story_font">
+                        <img src="img/pc/Untitled-2.png"><h2>#02.</h2>
+                        </div>
+                        <div class="tuna_story_text">
+                        <a href="#"><h3>다양한 부위가 있답니다</h3></a>
+                        <h4>횟감으로 사용하는 참다랑어, 눈다랑어, 황다랑어 등의 "다랑어류"와 통조림을 만드는 입이 뾰족한 황새치, 백새치 등 "새치류"로 구분할 수 있다</h4>
+                        </div>	
+                    </div>
+                     <div class="tuna_story02">
+                        <a href="#"><div class="tuna_story_img story2">
+                        <img src="img/pc/tuna3.jpg">
+                        </div></a>
+                        <div class="tuna_story_font">
+                        <img src="img/pc/Untitled-2.png"><h2>#03.</h2>
+                        </div>
+                        <div class="tuna_story_text">
+                        <a href="#"><h3>즐기는 방법!</h3></a>
+                        <h4>"참치는 담백한 속살부터 먹는 것이 좋다"라고 한다. 일반적으로 속살(아카미) - 등살(새도로) - 옆구리살(주도로) - 뱃살(오도로) - 갈비살(나카오치) 등의 순으로 기름이 많고 고소하다.</h4>
+                        </div>	
+                    </div>
+                </div>
+                <div class="tuna_story">
+                    <div class="tuna_story02">
+                        <a href="#"><div class="tuna_story_img story3">
+                        <img src="img/pc/tuna4.jpg">
+                        </div></a>
+                        <div class="tuna_story_font">
+                        <img src="img/pc/Untitled-2.png"><h2>#04.</h2>
+                        </div>
+                        <div class="tuna_story_text">
+                        <a href="#"><h3>건강</h3></a>
+                        <h4>참치는 고단백이면서 저지방, 저칼로리 식품으로 기억력 향상, 학습능력 향상, 콜레스테롤 감소, 치매예방 등에 뛰어난 효능이 있는 것으로 알려져 있다. 또한 뇌세포를 증식시킨다는 DHA가 풍부한 완벽한 청정해역의 생선으로 완전 무공해 식품이다.</h4>
+                        </div>	
+                    </div>
+                     <div class="tuna_story02">
+                        <a href="#"><div class="tuna_story_img story4">
+                        <img src="img/pc/tuna5.jpg">
+                        </div></a>
+                        <div class="tuna_story_font">
+                        <img src="img/pc/Untitled-2.png"><h2>#05.</h2>
+                        </div>
+                        <div class="tuna_story_text">
+                        <a href="#"><h3>효능</h3></a>
+                        <h4>뇌기능을 돕는 DHA 성분이 풍부하여 지능 발달을 도와준다. 저 칼로리, 저 지방 균형적인 식품으로 여성의 미용에 매우 좋다.</h4>
+                        </div>	
+                    </div>
+                </div>
+            </div>
+            <div class="tuna_story_wrap tsw2">
+                <div class="tuna_story">
+                    <div class="tuna_story01">
+                        <h1>돈을 잃음은 작게 잃음이요.<BR>
+        명예를 잃음은 크게 잃음이요.<BR>
+        건강을 잃음은 다 잃음이라.<br><span>- 조프리 네이어</span></h1>
+                    </div>
+                    <div class="tuna_story02">
+                        <a href="#"><div class="tuna_story_img story5">
+                        <img src="img/pc/story1.jpg">
+                        </div></a>
+                        <div class="tuna_story_font">
+                        <img src="img/pc/Untitled-2.png"><h2>#01.</h2>
+                        </div>
+                        <div class="tuna_story_text">
+                        <a href="#"><h3>건강이란?</h3></a>
+                        <h4>제 1기로 분류되는 원시, 중세시대에는 질병이 없는 건강한 육체인 생물학적 기능의 정상이 건강을 의미했고(일원론적 정의), 제 2기인 르네상스, 산업혁명 때는 심리, 교육, 사회의 종합적 이해가 필요하여 이원론적 정의가 내려졌으며, 제 3기(근대 및 현대초기)에는 생활의 다양화로 건강저해요소가 급증하여 정신적, 사회적 측면 모두를 포함하는 다원론적 정의가 내려졌다. 현대사회에서의 건강의 정의는 WHO가 제시한 건강이란 '단지 질병이 없거나 허약하지 않을 뿐만 아니라 신체적, 정신적, 사회적으로 안녕한 상태'이다.</h4>
+                        </div>	
+                    </div>
+                </div>
+                <div class="tuna_story">
+                    <div class="tuna_story02">
+                        <a href="#"><div class="tuna_story_img story6">
+                        <img src="img/pc/story2.jpg">
+                        </div></a>
+                        <div class="tuna_story_font">
+                        <img src="img/pc/Untitled-2.png"><h2>#02.</h2>
+                        </div>
+                        <div class="tuna_story_text">
+                        <a href="#"><h3>식습관</h3></a>
+                        <h4>최근 식생활의 서구화, 불규칙한 식사, 잦은 외식 등 다양한 식생활의 변화로 뇌혈관질환, 심장병, 위암, 고혈압성질환, 당뇨병 등의 만성 질환이 해를 거듭할 수록 증가하고 있습니다. 이러한 식습관 불균형이 원인이 된 만성 질환은 올바른 식생활로 식습관의 개선을 통해서만 좋아질 수 있다. 
+        올바른 식생활은 사실 어렵지 않습니다. 아래의 다섯가지 사항을 잘 지키면 된다. 
+        규칙적인 시간에, 한쪽에 치우치지 않고 자연적인 식품을 골고루, 과식하지 않고 싱겁게, 가족과 함께 식사하는 것이 올바른 식생활입니다. 건강한 내일에의 어렵지 않은 해법! 
+        올바른 식생활에서 찾을 수 있습니다.</h4>
+                        </div>	
+                    </div>
+                     <div class="tuna_story02">
+                        <a href="#"><div class="tuna_story_img story7">
+                        <img src="img/pc/story3.jpg">
+                        </div></a>
+                        <div class="tuna_story_font">
+                        <img src="img/pc/Untitled-2.png"><h2>#03.</h2>
+                        </div>
+                        <div class="tuna_story_text">
+                        <a href="#"><h3>운동</h3></a>
+                        <h4>"규칙적인 운동은 건강한 삶을 위해 반드시 필요하다. 대부분 운동은 단순히 신체를 단련하기 위한 것이라 여기지만, 운동의 궁극적인 효과는 바로 정신건강의 증진에 있다. 운동을 한다는 것은 뇌를 쓰는 것과 같다. 애초에 뇌의 진화와 발달 자체가 신체를 움직이기 위한 것이다. # 이런저러한 이유로 전문가들은 적어도 일주일에 3번 이상, 한 번에 30분 이상 운동하기를 권장한다."</h4>
+                        </div>	
+                    </div>
+                </div>
+                <div class="tuna_story">
+                    <div class="tuna_story02">
+                        <a href="#"><div class="tuna_story_img story8">
+                        <img src="img/pc/story4.jpg">
+                        </div></a>
+                        <div class="tuna_story_font">
+                        <img src="img/pc/Untitled-2.png"><h2>#04.</h2>
+                        </div>
+                        <div class="tuna_story_text">
+                        <a href="#"><h3>소래산</h3></a>
+                        <h4>소래산은 인천 남동구 장수동 산 65번지 일대가 정상석 주변 반경100m이다. 행정동과 법정동으로 볼 때 소래산 정확한 위치는 인천 남동구 장수동 산 65번지이다. 단지 소래산 산림욕장이라고 소래산 극히 일부만 시흥시 대야동에 있다. 근교 산 정상에서에 맛볼 수 없는 낙조 경관이 최고이다.
+        
+        </h4>
+                        </div>	
+                    </div>
+                     <div class="tuna_story02">
+                        <a href="#"><div class="tuna_story_img story9">
+                        <img src="img/pc/story5.jpg">
+                        </div></a>
+                        <div class="tuna_story_font">
+                        <img src="img/pc/Untitled-2.png"><h2>#05.</h2>
+                        </div>
+                        <div class="tuna_story_text">
+                        <a href="#"><h3>미식대담</h3></a>
+                        <h4>음식 분야에서 특별한 경력을 쌓아온 12인의 실무자들에게 ‘좋아하는 것을 잘 만들면서 살아남는 방법’을 묻고 실마리를 찾아나간다. 실무자 12인의 현재 위치와 고민은 모두 다르지만 그들의 선택 혹은 대응 방식에는 공통점이 있다. 이들은 2호점, 3호점으로 매장을 늘리거나 트렌드에 부합하는 아이템을 개발하는 데에만 집중하지 않는다.
+                        </h4>
+                        </div>	
+                    </div>
+                </div>
+            </div>
+        </div><!--allwarp-->    
+        <div class="more more3">
+            <a href="#">더보기</a>
+        </div>  
+        <div class="line5">
+        </div>
+        <div class="banner1 ba2">
+            <h1>오시는 길</h1>
+            <h3>추억을 남기고 가는 음식점이 되도록 최선을 다하겠습니다	</h3> 
+        </div>
+        <div class="road_wrap">
+            <div class="road0">
+                <div class="road1">
+                    <div class="road1_1">
+                        <h4>주소</h4><h5>경기도 시흥시 은행동 325-360번지</h5>
+                    
+                    </div>
+                    <div class="road1_2">
+                    <h5>일요일/공휴일은 휴무입니다</h5>
+                    </div>
+                </div>
+                <div class="road2">
+                    <div class="road2_1">
+                    <h4>전화번호</h4><h5>031-313-3730</h5>
+                    </div>
+                    <div class="road2_2">
+                        <h4>영업안내</h4><h5>평일 오전 05시~오후 11시</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m_road_wrap">
+            <div class="m_road0">
+                <div class="m_road1">
+                    <div class="m_road1_1">
+                    <h5><span>영업안내</span>평일 오전 05시~오후 11시</h5>
+                    </div>
+                    <div class="m_road2_1">
+                    <h5><span>전화번호</span>031-313-3730</h5>
+                    </div>
+                    
+                </div>
+                <div class="m_road2">
+                    <div class="m_road2_2">
+                    <h5><span>주소</span>경기도 시흥시 은행동 325-360번지</h5>
+                    </div>
+                    <div class="m_road1_2">
+                    <h5>일요일/공휴일은 휴무입니다</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more map_more">
+            <a href="#">자세히 보기</a>
+        </div>      
+        <div class="map">
+        </div>                  
+    </section>	
+    <div class="footer">
+        <footer>
+            <div id="first">
+                <div id="last">
+                    <div id="copyright">
+                        <a href="#">회사소개</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">이용약관</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">개인정보</a><br><br>
+                        참치한잔ㅣ 사업자등록번호 : 123-45-678<br>경기도 시흥시 매화동 240-5 
+                        <br>상담 및 문의 : 010-1234-5678 ㅣ이메일문의 : 123456@naver.com<br>
+                        Copyright (c) 참치한잔 All rights reserved. 
+                    </div>
+                </div>
+            </div>
+            <div id="black_logo1">
+                <img src="img/pc/sns.png">
+            </div>
+        </footer>
+	</div>
+</body>
+</html>
